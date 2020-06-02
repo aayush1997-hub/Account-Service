@@ -21,7 +21,7 @@ public class ExceptionControllerAdvice {
 
 		ErrorMessage error = new ErrorMessage();
 
-		error.setErrorCode(500);
+		error.setErrorCode(404);
 
 		error.setMessage(ex.getMessage());
 
@@ -36,7 +36,7 @@ public class ExceptionControllerAdvice {
 
 		ErrorMessage error = new ErrorMessage();
 
-		error.setErrorCode(500);
+		error.setErrorCode(404);
 
 		error.setMessage(ex.getMessage());
 
@@ -51,7 +51,7 @@ public class ExceptionControllerAdvice {
 
 		ErrorMessage error = new ErrorMessage();
 
-		error.setErrorCode(500);
+		error.setErrorCode(400);
 
 		error.setMessage(ex.getMessage());
 
