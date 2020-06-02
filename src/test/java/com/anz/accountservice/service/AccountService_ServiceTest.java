@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
@@ -38,9 +39,9 @@ public class AccountService_ServiceTest {
 	@Mock
 	private TransactionRepository transactionRepo;
 
-	private List<AccountEntity> accountsList = null;
+	private List<AccountEntity> accountsList =new ArrayList<AccountEntity>();
 
-	private List<TransactionEntity> transactionList = null;
+	private List<TransactionEntity> transactionList = new ArrayList<TransactionEntity>();
 
 	@Before
 	public void initialize() {
